@@ -44,7 +44,7 @@ module Debugger
           e = b + listsize - 1
         end
       end
-      @state.previous_line = display_list(b, e, @state.file, @state.line)
+      @state.previous_line = display_list(b.to_i, e, @state.file, @state.line)
     end
 
     class << self
